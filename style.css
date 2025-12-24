@@ -79,11 +79,6 @@
 }
 
 .left-section ul {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
   list-style: none;
   width: max-content;
   margin: 0px auto;
@@ -134,7 +129,7 @@ hr {
   flex: 1;
   background-color: var(--primary-light-color);
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   /* height: 100vh; */
   /* overflow-x:hidden; */
 }
@@ -468,7 +463,7 @@ form {
   }
 
   .projects-container {
-    margin-top: 86px;
+    margin-top: 70px;
     padding: 20px;
   }
   .right-projects-section {
@@ -507,6 +502,10 @@ form {
     width: 90%; /* Take full width */
   }
 
+  .right-section .about-me {
+    margin: 20px;
+  }
+
   .small-projects {
     flex-direction: column; /* Stack project cards vertically */
   }
@@ -542,7 +541,7 @@ form {
     width: 320px;
   }
   .right-section {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     flex-direction: column;
     width: 100%; /* Take full width */
   }
