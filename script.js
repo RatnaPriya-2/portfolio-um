@@ -1,5 +1,10 @@
 // Importing project data arrays from data.js
-import { jsProjects, reactProjects, bigReactProjects } from "./data.js";
+import {
+  jsProjects,
+  reactProjects,
+  bigReactProjects,
+  fullStackProjects,
+} from "./data.js";
 
 // Reset the contact form whenever the page is shown (prevents autofill issues)
 window.addEventListener("pageshow", function () {
@@ -149,12 +154,16 @@ projectBtns.addEventListener("click", (e) => {
   // If "JavaScript" button clicked
   if (tech.includes("JavaScript")) {
     selectedSmallProjects = jsProjects;
+    selectedBigProjects = fullStackProjects;
 
     // If "React" button clicked
   }
   if (tech.includes("React")) {
     selectedSmallProjects = reactProjects;
     selectedBigProjects = bigReactProjects;
+  }
+  if (tech.includes("Full Stack")) {
+    selectedBigProjects = fullStackProjects;
   }
   // Render the selected projects
   selectedSmallProjects.forEach((project) => createCard(project));

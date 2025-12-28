@@ -163,6 +163,13 @@ hr {
   font-weight: 600;
 }
 
+.project-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
 button {
   padding: 10px 20px;
   border: none;
@@ -186,10 +193,6 @@ button:active {
 button a {
   color: white;
   text-decoration: none;
-}
-
-button:nth-of-type(1) {
-  margin-right: 15px;
 }
 
 .right-section .about-me {

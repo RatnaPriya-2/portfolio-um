@@ -276,3 +276,70 @@ export const bigReactProjects = [
     },
   },
 ];
+
+export const fullStackProjects = [
+  {
+    id: 1,
+    name: "ClassConnect",
+    image: "./assets/classConnect.png",
+    title: "ClassConnect – Student-Teacher appointment booking ",
+    description:
+      "A role-based class scheduling and appointment management web application built using vanilla JavaScript and Firebase, enabling teachers and students to manage classes efficiently.",
+    features: [
+      "User authentication with role-based access (Teacher & Student)",
+      "Teacher dashboard for creating, viewing, and managing time slots",
+      "Student appointment booking with slot availability handling",
+      "Approval and cancellation workflow for appointments",
+      "Real-time data synchronization using Firebase Firestore",
+      "Modular and scalable frontend architecture",
+    ],
+    techStack: [
+      "./assets/html-5.png",
+      "./assets/css-3.png",
+      "./assets/js.png",
+      "./assets/firebase.png",
+    ],
+    links: {
+      liveDemo: "https://classconnect-stba.netlify.app/",
+      code: "https://github.com/RatnaPriya-2/ClassConnect--Student-Teacher-Booking-Appointment",
+    },
+    technologies: {
+      frontend: ["HTML", "CSS", "JavaScript"],
+      styling: ["CSS", "Responsive Design", "Media Queries"],
+      authentication: ["Firebase Authentication", "Firestore"],
+      database: ["Firebase Firestore"],
+    },
+  },
+  {
+    id: 2,
+    name: "CaterSpot",
+    image: "./assets/caterSpot.png",
+    title: "CaterSpot – Catering Order Management System",
+    description:
+      "A catering order management web application designed to streamline food ordering, order tracking, and user management with a modular frontend and Firebase backend.",
+    features: [
+      "User authentication with role-based access (Admin & Customer)",
+      "Customer-facing interface to browse menu items and place orders",
+      "Admin dashboard for managing orders and updating order status",
+      "Real-time order updates using Firebase Firestore",
+      "Structured and modular frontend architecture",
+      "Responsive UI for seamless usage across devices",
+    ],
+    techStack: [
+      "./assets/html-5.png",
+      "./assets/css-3.png",
+      "./assets/js.png",
+      "./assets/firebase.png",
+    ],
+    links: {
+      liveDemo: "https://caterspot.netlify.app/",
+      code: "https://github.com/RatnaPriya-2/CaterSpot--Catering--Order-System",
+    },
+    technologies: {
+      frontend: ["HTML", "CSS", "JavaScript"],
+      styling: ["CSS", "Responsive Design", "Media Queries"],
+      authentication: ["Firebase Authentication", "Firestore"],
+      database: ["Firebase Firestore"],
+    },
+  },
+];
