@@ -129,9 +129,10 @@ hr {
   flex: 1;
   background-color: var(--primary-light-color);
   display: flex;
-  /* align-items: center; */
-  /* height: 100vh; */
-  /* overflow-x:hidden; */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .image img {
@@ -411,7 +412,7 @@ form {
 
 @media (max-width: 821px) {
   .main-container {
-    flex-direction: column; /* Stack left and right sections */
+    flex-direction: column;
   }
 
   .hamburger {
@@ -446,9 +447,9 @@ form {
   }
 
   .left-section ul {
-    position: static; /* Remove absolute positioning */
-    transform: none; /* Remove transform */
-    margin-top: 50px; /* Add some top margin */
+    position: static;
+    transform: none;
+    margin-top: 50px;
   }
   .left-section .close-btn {
     display: block;
@@ -457,9 +458,10 @@ form {
   .right-section {
     margin-top: 50px;
     flex-direction: column;
+    justify-content: start;
+    margin-top: 100px;
     width: 100%; /* Take full width */
   }
-
   .image img {
     width: 100%; /* Image takes full width */
     height: 200px;
@@ -500,9 +502,9 @@ form {
   .contact-me,
   form,
   .personal-details {
-    margin: 20px; /* Adjust margins */
+    margin: 20px;
     padding: 20px;
-    width: 90%; /* Take full width */
+    width: 90%;
   }
 
   .right-section .about-me {
@@ -510,7 +512,7 @@ form {
   }
 
   .small-projects {
-    flex-direction: column; /* Stack project cards vertically */
+    flex-direction: column;
   }
 
   .project-btns {
@@ -522,11 +524,11 @@ form {
   }
 
   .project-card {
-    width: 100%; /* Project cards take full width */
+    width: 100%;
   }
 
   .social-links {
-    width: 100%; /* Social links take full width */
+    width: 100%;
     justify-content: space-around;
   }
   form {
@@ -546,7 +548,7 @@ form {
   .right-section {
     /* margin-top: 50px; */
     flex-direction: column;
-    width: 100%; /* Take full width */
+    width: 100%;
   }
   .content {
     order: 2;
@@ -566,7 +568,7 @@ form {
     margin-bottom: 10px;
   }
   form {
-    max-height: calc(100vh - 200px); /* Adjust 200px as needed */
-    overflow-y: auto; /* Scroll if form is too tall */
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
   }
 }
